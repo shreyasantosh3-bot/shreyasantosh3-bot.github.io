@@ -1,1 +1,123 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="light">
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <nav aria-label="Main">
+    <div class="wrap">
+      <a class="logo" href="#top">Your Name</a>
+      <ul>
+        <li><a href="#work" data-link="work">Projects</a></li>
+        <li><a href="#personal" data-link="personal">Personal</a></li>
+        <li><a href="#contact" data-link="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top" data-bg="#ECC8AF" data-theme="light">
+      <div class="shape a" aria-hidden="true" data-speed="0.12"></div>
+      <div class="shape b" aria-hidden="true" data-speed="-0.08"></div>
+      <div class="wrap">
+        <h1 class="rise d1">Your Name</h1>
+        <p class="intro rise d2">[Your profession] based in [City]. I [what you do] for [who you do it for].</p>
+        <a class="button rise d3" href="#work">See my projects</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS: each row links to its own page.
+         To add a project, copy a whole <li>, then copy project-one.html and rename it. -->
+    <section class="block" id="work" data-bg="#E7AD99" data-theme="light">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p>Each one has its own page with the full story.</p>
+
+        <div class="work-grid">
+          <ul class="projects">
+            <li>
+              <a class="row" href="project-one.html" data-name="Project One" data-color="#CE796B" data-text="#2F3A45" data-img="">
+                <span class="top"><span class="title">Project One</span><span class="meta">[Category], 2026</span></span>
+                <p>One sentence about what this project was.</p>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="project-two.html" data-name="Project Two" data-color="#C18C5D" data-text="#2F3A45" data-img="">
+                <span class="top"><span class="title">Project Two</span><span class="meta">[Category], 2025</span></span>
+                <p>One sentence about what this project was.</p>
+              </a>
+            </li>
+            <li>
+              <a class="row" href="project-three.html" data-name="Project Three" data-color="#495867" data-text="#ECC8AF" data-img="">
+                <span class="top"><span class="title">Project Three</span><span class="meta">[Category], 2025</span></span>
+                <p>One sentence about what this project was.</p>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Preview panel (desktop only). For a real image, set data-img="your-image.jpg" on the row above. -->
+          <div class="preview" id="preview" aria-hidden="true">
+            <img id="pv-img" alt="" hidden>
+            <div class="label" id="pv-label">Project One</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL -->
+    <section class="block" id="personal" data-bg="#ECC8AF" data-theme="light">
+      <div class="wrap split">
+        <div class="sticky"><h2>Personal</h2></div>
+        <div>
+          <p>Write a few short paragraphs about you. Where you're from, what you care about, and what you do when you're not working.</p>
+          <p>This is the place for the stuff a resume leaves out.</p>
+
+          <ul class="list">
+            <li><span>Reading</span><span>[A book]</span></li>
+            <li><span>Listening to</span><span>[An album or podcast]</span></li>
+            <li><span>Making</span><span>[A side project or hobby]</span></li>
+            <li><span>Favorite place</span><span>[A spot you love]</span></li>
+          </ul>
+
+          <!-- Swap each placeholder for <img class="media" src="photo1.jpg" alt="Describe the photo"> -->
+          <div class="photos">
+            <div class="media" style="--c: var(--rose)" role="img" aria-label="Photo one"></div>
+            <div class="media" style="--c: var(--almond)" role="img" aria-label="Photo two"></div>
+            <div class="media" style="--c: var(--slate)" role="img" aria-label="Photo three"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="block contact" id="contact" data-bg="#495867" data-theme="dark">
+      <div class="wrap">
+        <h2>Want to work together?</h2>
+        <a class="big-email" href="mailto:you@example.com">you@example.com</a>
+        <div class="actions">
+          <button class="button" id="copy" data-email="you@example.com">Copy email</button>
+          <a href="https://www.linkedin.com/in/yourname">LinkedIn</a>
+          <a href="https://github.com/yourusername">GitHub</a>
+          <a href="resume.pdf">Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-bg="#495867"><div class="wrap">&copy; 2026 Your Name</div></footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
