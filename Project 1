@@ -194,7 +194,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px so
     <div class="wrap">
       <a class="logo" href="index.html"><span>✦</span> Your Name</a>
       <ul>
-        <li><a href="index.html#projects" >Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="index.html#skills" >Skills</a></li>
         <li><a href="personal.html">Personal</a></li>
         <li><a href="index.html#contact" >Contact</a></li>
